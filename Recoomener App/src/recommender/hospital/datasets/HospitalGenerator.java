@@ -1,0 +1,84 @@
+package recommender.hospital.datasets;
+/*
+ * 
+ * This class reads the data from the hospitals file 
+ * and creates the object of HospitalData class
+ * 
+ * 
+ * */
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+
+import android.content.Context;
+import android.content.res.AssetManager;
+
+public class HospitalGenerator {
+	private static Context context;
+
+    public static void setContext(Context mcontext) {
+        if (context == null)
+            context = mcontext;
+    }
+	HashMap <Integer,HospitalData> hospitalmapper = new HashMap<Integer, HospitalData> ();
+	public void hospitaldataread(String file)
+	{
+		String data="";
+		try
+		{
+			
+		System.out.println(file);
+		InputStream in=context.getAssets().open(file);
+		BufferedReader br=new BufferedReader(new InputStreamReader(in, "UTF-8"));
+		/*
+		 * 
+		 * Split the rating files based on "," token
+		new FileReader(file) * Values[0]=hospital_Id
+		 * Values[1]=hospital_Name
+		 * Values[2]=List_Departments
+		 * 
+		 * */
+		while((data=br.readLine())!=null)
+		{
+			boolean srvc;
+			String [] values= data.split(",");
+			/*call getdepartments to get the list of hospitals*/
+			if(values[3].trim().equalsIgnoreCase("yes"))
+				{srvc=true;}
+			else
+				{srvc=false;}
+			List<String> departments=getdepartments(values[2]);
+			hospitalmapper.put(Integer.parseInt(values[0]),new HospitalData(Integer.parseInt(values[0]), values[1].trim(),srvc, departments));			
+		}
+		}catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+	}
+
+	public List<String> getdepartments(String dpt_val) {
+		List <String> dpts=new LinkedList<String> ();
+		String [] dpt_single=dpt_val.split("-");
+		for(int i=0;i<dpt_single.length;i++)
+		{
+			dpts.add(dpt_single[i]);
+		}
+		return dpts;
+	}
+	
+	/*
+	 * Returm th hashmap created 
+	 * called from SimilarUsers
+	 * */
+	
+	public HashMap <Integer,HospitalData> getHospitalDataHashmap()
+	{
+		return hospitalmapper;
+		
+	}
+}
