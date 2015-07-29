@@ -60,13 +60,16 @@ public class RecommendHospitalFragment extends Fragment {
          gpstrack.getLocation();
          RecommendationEngine RE=new RecommendationEngine();
  		hospitals=RE.Recommend(368);
- 		HospitalGenerator rg=new HospitalGenerator();
- 		rg.hospitaldataread(ConstantValues.hospitaldata_File);
- 		hospital_ret_data=rg.getHospitalDataHashmap();
+ 		//Log.d("Recommended hospitals",hospitals.toString());
+ 		HospitalGenerator hg=new HospitalGenerator();
+ 		hg.hospitaldataread(ConstantValues.hospitaldata_File);
+ 		hospital_ret_data=hg.getHospitalDataHashmap();
  		Iterator<Map.Entry<Integer, Float>> it = hospitals.entrySet().iterator();
+ 		Log.d("size",(Integer.toString(hospital_ret_data.size())));
 		while (it.hasNext())
 		{
 			Map.Entry<Integer, Float> entry = it.next();
+			Log.d("hospital key",entry.getKey().toString());
 			String name=hospital_ret_data.get(entry.getKey()).gethospital_Name().toString();
 			locationAddress.getLatLongFromAddress(name,this.getActivity());
 			double dist=DistanceCalc.distFrom(Math.toRadians(gpstrack.getLatitude()),Math.toRadians(gpstrack.getLongitude()),Math.toRadians(GeocodingLocation.lat),Math.toRadians(GeocodingLocation.longt));

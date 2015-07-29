@@ -17,6 +17,7 @@ import java.util.HashMap;
 import recommender.hospital.constants.ConstantValues;
 
 import android.content.Context;
+import android.util.Log;
 
 
 public class RatingGenerator
@@ -35,8 +36,7 @@ public class RatingGenerator
 		
 		try
 		{
-			
-		System.out.println(file);
+		
 		InputStream in=context.getAssets().open(file);
 		BufferedReader br=new BufferedReader(new InputStreamReader(in, "UTF-8"));
 		/*
@@ -58,6 +58,7 @@ public class RatingGenerator
 		}catch(IOException e)
 		{
 			e.printStackTrace();
+			
 		}
 	}
 	

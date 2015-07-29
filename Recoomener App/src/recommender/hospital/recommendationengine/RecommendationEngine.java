@@ -82,7 +82,7 @@ public class RecommendationEngine {
 			    int user_Id=entry.getKey();
 			    /*Get the disease list for each user*/
 			    List<String> d_list = entry.getValue().getdisease_List();
-			    if(d_list.contains("ENT"))
+			    if(d_list.contains("GAD"))
 			    {
 			   // System.out.println("Diseases: " + d_list.toString());
 			    patient_similar.add(user_Id);
@@ -158,6 +158,7 @@ public HashMap<Integer,Float> rechospitalonSelfrating(int U_id)
 
 public HashMap <Integer,Float> rechospitalonOtherrating(List<Integer> lst)
 	{
+		
 		RatingGenerator rg=new RatingGenerator();
 		rg.RatingdataRead(rating_file);
 		HashMap <Integer,RatingDataset> ratingmapper=rg.getRatingDatasetHashmap();
@@ -178,6 +179,7 @@ public HashMap <Integer,Float> rechospitalonOtherrating(List<Integer> lst)
 		    	else
 		    	{
 		    		recommended_hospital.put(entry.getValue().gethospital_Id(), entry.getValue().gethospital_Rating());
+		    	
 		    	}
 		    }
 		}

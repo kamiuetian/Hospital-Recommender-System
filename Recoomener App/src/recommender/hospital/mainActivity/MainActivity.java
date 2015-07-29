@@ -4,8 +4,9 @@ package recommender.hospital.mainActivity;
 import recommender.hospital.R;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
-
+import recommender.hospital.adapterdata.NavDrawerItem;
 import recommender.hospital.adapters.NavDrawerListAdapter;
 import recommender.hospital.datasets.HospitalGenerator;
 import recommender.hospital.datasets.RatingGenerator;
@@ -15,9 +16,9 @@ import recommender.hospital.fragments.EmergencyFragment;
 import recommender.hospital.fragments.HospitalsFragment;
 import recommender.hospital.fragments.PagesFragment;
 import recommender.hospital.fragments.PhotosFragment;
+import recommender.hospital.fragments.ProfileFragment;
 import recommender.hospital.fragments.RecommendHospitalFragment;
 import recommender.hospital.recommendationengine.RecommendationEngine;
-import recommender.hospital.slidingmenu.NavDrawerItem;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -35,6 +36,9 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class MainActivity extends Activity {
+	
+	// User Session Manager Class
+		UserSessionManager session;
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
 	private ActionBarDrawerToggle mDrawerToggle;
@@ -51,11 +55,26 @@ public class MainActivity extends Activity {
 
 	private ArrayList<NavDrawerItem> navDrawerItems;
 	private NavDrawerListAdapter adapter;
-
+	String email;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		/*
+		 * Login Check
+		 * */
+		session = new UserSessionManager(getApplicationContext());
+		if(session.checkLogin())
+        	{finish();}
+		else
+		{
+		HashMap<String, String> user = session.getUserDetails();
+        // get email
+        email = user.get(UserSessionManager.KEY_EMAIL);
+        Log.d("Email",email);
+		}
 		super.onCreate(savedInstanceState);
-		int u_id=368;
+		 // get user data from session
+        
+		int u_id=150;
 		HospitalGenerator.setContext(getApplicationContext());
 		UserGenerator.setContext(getApplicationContext());
 		RatingGenerator.setContext(getApplicationContext());
@@ -78,6 +97,8 @@ public class MainActivity extends Activity {
 
 		// adding nav drawer items to array
 		// Home
+		//Profile Details
+		navDrawerItems.add(new NavDrawerItem(email, navMenuIcons.getResourceId(5, -1)));
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0, -1)));
 		// Find People
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1)));
@@ -89,6 +110,7 @@ public class MainActivity extends Activity {
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1)));
 		// What's hot, We  will add a counter here
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1)));
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuIcons.getResourceId(4, -1)));
 		
 
 		// Recycle the typed array
@@ -183,23 +205,26 @@ public class MainActivity extends Activity {
 		Fragment fragment = null;
 		switch (position) {
 		case 0:
-			fragment = new HospitalsFragment();
+			fragment = new ProfileFragment();
 			break;
 		case 1:
-			fragment = new RecommendHospitalFragment();
+			fragment = new HospitalsFragment();
+			
 			break;
 		case 2:
-			fragment = new PhotosFragment();
+			fragment = new RecommendHospitalFragment();
+			
 			break;
 		case 3:
-			fragment = new CommunityFragment();
-			break;
-		case 4:
 			fragment = new EmergencyFragment();
 			
 			break;
+		case 4:
+			fragment = new CommunityFragment();
+			
+			break;
 		case 5:
-			fragment = new PagesFragment();
+			session.logoutUser();
 			break;
 
 		default:

@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
 <!--  Single List Item Design -->
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/hospital"
+
+    <ImageView
+        android:id="@+id/img_hospital"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_centerVertical="true" />
+
+<TextView
+    android:id="@+id/name_hospital"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="10dip"
+    android:layout_toRightOf="@id/img_hospital"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/min_height_listItem"
+    android:paddingRight="40dp"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
     android:textColor="@color/list_background"
-    android:textColorHint="@color/list_background"
-    android:textSize="16dip"
-    android:textStyle="bold" >
+    android:textColorHint="@color/list_background" >
 
 </TextView>
+</LinearLayout>

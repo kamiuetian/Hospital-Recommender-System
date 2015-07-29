@@ -17,10 +17,11 @@ import java.util.List;
 
 import android.content.Context;
 import android.content.res.AssetManager;
+import android.util.Log;
 
 public class HospitalGenerator {
 	private static Context context;
-
+	public HospitalData hosp_data; 
     public static void setContext(Context mcontext) {
         if (context == null)
             context = mcontext;
@@ -40,20 +41,26 @@ public class HospitalGenerator {
 		 * Split the rating files based on "," token
 		new FileReader(file) * Values[0]=hospital_Id
 		 * Values[1]=hospital_Name
-		 * Values[2]=List_Departments
+		 * Values[2]=hospital address
+		 * Values[3]= hospital phone
+		 * values[4]= hospital website
+		 * values[5]= ospital email
 		 * 
 		 * */
 		while((data=br.readLine())!=null)
 		{
-			boolean srvc;
+			//boolean srvc;
 			String [] values= data.split(",");
 			/*call getdepartments to get the list of hospitals*/
-			if(values[3].trim().equalsIgnoreCase("yes"))
+			/*if(values[3].trim().equalsIgnoreCase("yes"))
 				{srvc=true;}
 			else
-				{srvc=false;}
-			List<String> departments=getdepartments(values[2]);
-			hospitalmapper.put(Integer.parseInt(values[0]),new HospitalData(Integer.parseInt(values[0]), values[1].trim(),srvc, departments));			
+				{srvc=false;}*/
+			List<String> departments=getdepartments(values[6]);
+			//hospitalmapper.put(Integer.parseInt(values[0]),new HospitalData(Integer.parseInt(values[0]), values[1].trim(),srvc, departments));			
+		
+			hospitalmapper.put(Integer.parseInt(values[0]),new HospitalData(Integer.parseInt(values[0]), values[1].trim(), 
+								values[2].trim(), values[3].trim(), values[4].trim(), values[5].trim(),departments));
 		}
 		}catch(IOException e)
 		{

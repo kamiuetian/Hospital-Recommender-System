@@ -4,7 +4,7 @@ import recommender.hospital.R;
 
 import java.util.ArrayList;
 
-import recommender.hospital.slidingmenu.NavDrawerItem;
+import recommender.hospital.adapterdata.NavDrawerItem;
 
 import android.app.Activity;
 import android.content.Context;

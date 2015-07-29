@@ -1,28 +1,21 @@
-1,CDA Hospital,General Surgery- Orthopaedics- Urology- Gynae and Obstetrics- Neo-natology- Eye & ENT- Post-operative Intensive Care and Accident and Emergency,yes
-2,Federal Government Services Hospital,Orthodontics- Implantology- Crown- RCT- Dentures- Veneers- Cosmetology- Dermatology,yes
-3,Golra Welfare Hospital,pediatric care- ENT- internal medicine- orthopedic- cardiology,yes
-4,KRL Hospital,stress electrocardiography- EMG and Nerve Contraction,no
-5,National Institute of Health,ENT- General Surgery-Neonatology- Gastroenterology,no
-6,Islamabad Medical Complex,gummy smile correction metal free crowns/bridges- wisdom teeth extractions,yes
-7,Shifa International Hospital,porcelain veneers- smile corrections- gap closures- fixed teeth- root canal treatment,yes
-8,PAEC Hospital,Allergy/Clinical Immunology-  Cardiology- Dermatology- Dental Clinic- Emergency- Endocrinology- Gastroenterology- Internal Medicine-Infectious Diseases- Neurology- Nephrology- Obstetrics & Gynecology- Ophthalmology- Pediatrics- Psychiatry- Pulmonology,no
-9,Pakistan Institute of Medical Sciences,Radiology- Pathology- Blood Bank- Angiography- Scanning- stress electrocardiography- EMG and Nerve Contraction- Bronchoscopy- Endoscopy,yes
-10,Western dental Hospital,dental implants- teeth whitening- porcelain veneers- smile corrections- gap closures- fixed teeth- root canal treatment- gum surgery- braces- kids dentistry- laser dentistry- gummy smile correction metal free crowns/bridges- wisdom teeth extractions- dental X-rays,no
-11,Shifa International Hospital,Dermatology- Psychiatry- Clinical Psychology- Anesthesia- Dentistry- Radiology,yes
-12,Faisal Memorial Hospital & BURN UNIT- Islamabad,Rheumatology and Rehabilitation- Dermatology- Psychiatry,no
-13,Ali Medical Centre F8 Markaz- Islamabad,Cardiology- Oncology- Pediatrics- Pulmonology- Ophthalmology- ENT,no
-14,Aslam Memorial Medicare Hospital,Allergy/Clinical Immunology-  Cardiology- Dermatology- Dental Clinic,no
-15,Chee Chee Hospital,porcelain veneers- smile corrections- gap closures- fixed teeth,no
-16,Dar-ul-Shifa Hospital,pediatric care- ENT- internal medicine- orthopedic- cardiology- surgery- plastic surgery- dermatology- ophthalmology- urology,yes
-17,Dr.Arshad Health Associates-Medical Facilities,Surgery- Orthopedics- Gynecology- Neurosurgery- Cardiology- Oncology- Pediatrics,yes
-18,Elahi Medical Center,Out Patient Services- Emergency Services- Laboratory Facility- Pharmacy,no
-19,Fauji Foundation Hospital,Medicine- Surgery- Orthopedics- Gynecology- Neurosurgery- Cardiology- Oncology- Pediatrics- Pulmonology- Ophthalmology- ENT- Urology- Rheumatology and Rehabilitation- Dermatology- Psychiatry- Clinical Psychology- Anesthesia- Dentistry- Radiology- Pathology- Plastic Surgery- Nephrology and Neurology,yes
-20,Hope Medical Dental & Diagnostics,Orthodontics- Implantology- Crown- RCT- Dentures- Veneers- Cosmetology- Dermatology,no
-21,Integrated Health Services (IHS Pakistan), smile corrections- gap closures- fixed teeth- root canal treatment- gum surgery,yes
-22,Islamabad Private Hospital,Cardiology- Oncology- Pediatrics- Pulmonology- Ophthalmology- ENT- Urology,no
-23,Islamabad Specialist Clinic,Internal Medicine- Pulmonolgy- Haematology- Cardiology- Psychiatry- Dentistry- Diabetology- Dermatology- Ophthalmology- Gynaecology - ENT- General Surgery-Neonatology- Gastroenterology,no
-24,Islamic International Medical Complex,Obstetrics- Gynecology,yes
-25,Kulsum International Hospital,Neurological- Orthopaedic- Paediatric- Rheumatology- Geriatric- Angioplasty- Cardiac Transplant- Metabolic Syndrome- Diabetes- Kidney- Gastrointestinal,yes
-26,Maroof International Hospital,Dermatology- Psychiatry- Clinical Psychology- Anesthesia- Dentistry- Radiology- Pathology- Plastic Surgery- Nephrology and Neurology,no
-27,Quaid-eAzam International Hospital,Orthopedics- Gynecology- Neurosurgery- Cardiology- Oncology- Pediatrics- Pulmonology- Ophthalmology- ENT- Urology- Rheumatology and Rehabilitation,yes
-28,Rawal General and Dental Hospital Islamabad.,Allergy/Clinical Immunology-  Cardiology- Dermatology- Dental Clinic- Emergency- Endocrinology- Gastroenterology- Internal Medicine-Infectious Diseases- Neurology- Nephrology,no
+1,Ali Medical Hospital,Ali Medical Centre Kohistan Rd Islamabad,+92 51 4444435,http://alihospital.org,trimzyal@yahoo.com,Orthodontics- Implantology- Crown- RCT- Dentures- Veneers- Cosmetology- Dermatology
+2,Assisted Reproductive Technology Center (Women Clinic),Assisted Reproductive Technology Center Huma Plaza 21 East A.K.M Fazl-ul-Haq Rd Islamabad ,+92 51 2872368,http://www.lowcostivfpk.com/,info@lowcostivfpk.com,stress electrocardiography- EMG and Nerve Contraction
+3,Bilal Hospital,38-A Sattellite town Salman shaheed road rawalpindi,+92 51 8094533-36,http://www.bilalhospital.com/,info@bilalhospital.com,ENT- General Surgery-Neonatology- Gastroenterology
+4,Shakir Medical Centre,Fazal-e-Elahi Market Maira Jaffar Rd G-12-1  G-12 Islamabad,+92 345 4288553,NIL,NIL,gummy smile correction metal free crowns/bridges- wisdom teeth extractions
+5,Maroof International Hospital,MAROOF International HospitalService Rd E Islamabad,+92 51 111 644 911,http://www.maroof.com.pk,info@maroof.com.pk,porcelain veneers- smile corrections- gap closures- fixed teeth- root canal treatment
+6,PAEC General Hospital,PAEC General Hospital Faqir Aipee Road Islamabad,+92 51 4434521,NIL,NIL,Allergy/Clinical Immunology-  Cardiology- Dermatology- Dental Clinic- Emergency- Endocrinology- Gastroenterology- Internal Medicine-Infectious Diseases- Neurology- Nephrology- Obstetrics & Gynecology- Ophthalmology- Pediatrics- Psychiatry- Pulmonology
+7,Shifa International Hospitals Ltd.,Shifa International Hospitals Ltd. Pitras Bukhari Rd Islamabad,+92 51 8463666,http://www.shifa.com.pk/,info@shifa.com.pk,Radiology- Pathology- Blood Bank- Angiography- Scanning- stress electrocardiography- EMG and Nerve Contraction- Bronchoscopy- Endoscopy
+8,Fauji Foundation Hospital,Fauji Foundation Hospital Rawalpindi,051- 578.8150,http://www.fauji.org.pk/fauji/welfare/healthcare/,info@fauji.org.pk,dental implants- teeth whitening- porcelain veneers- smile corrections- gap closures- fixed teeth- root canal treatment- gum surgery- braces- kids dentistry- laser dentistry- gummy smile correction metal free crowns/bridges- wisdom teeth extractions- dental X-rays
+9,Dar-ul-Shifa Hospital,Dar-ul-Shifa Hospital H-8-1H-8-1Islamabad,NIL,NIL,NIL,Dermatology- Psychiatry- Clinical Psychology- Anesthesia- Dentistry- Radiology
+10,pims hospital,Pakistan Institute of Medical Sciences Ibn-e-Sina Rd Islamabad,NIL,http://www.pims.gov.pk/,NIL,Rheumatology and Rehabilitation- Dermatology- Psychiatry
+11,Federal Government Services Hospital,Federal Government Services Hospital Shaheed-e-Millat Rd Islamabad,NIL,NIL,NIL,Cardiology- Oncology- Pediatrics- Pulmonology- Ophthalmology- ENT
+12,CDA Hospital, CDA Hospital G6 Islamabad,NIL,NIL,NIL,pediatric care- ENT- internal medicine- orthopedic- cardiology- surgery- plastic surgery- dermatology- ophthalmology- urology
+13,National Institute of Health,National Institute of Health Islamabad,+92 51 9255110,http://www.nih.org.pk/,NIL,Out Patient Services- Emergency Services- Laboratory Facility- Pharmacy
+14,Nescom Hospital,Nescom Hospital H-11 Islamabad,NIL,NIL,NIL,Medicine- Surgery- Orthopedics- Gynecology- Neurosurgery- Cardiology- Oncology- Pediatrics- Pulmonology- Ophthalmology- ENT- Urology- Rheumatology and Rehabilitation- Dermatology- Psychiatry- Clinical Psychology- Anesthesia- Dentistry- Radiology- Pathology- Plastic Surgery- Nephrology and Neurology
+15,KRL Hospital,KRL Hospital G-9/1 Islamabad,NIL,NIL,NIL,Orthodontics- Implantology- Crown- RCT- Dentures- Veneers- Cosmetology- Dermatology
+16,Kulsum International Hospital,Kulsum International Hospital Block E Islamabad,NIL,NIL,NIL, smile corrections- gap closures- fixed teeth- root canal treatment- gum surgery
+17,IHS - Hospital for Children,IHS - Hospital for Children Street 35 Islamabad,+92 51 2298217,http://www.ihspakistan.com/,info@ihspakistan.com,Cardiology- Oncology- Pediatrics- Pulmonology- Ophthalmology- ENT- Urology
+18,Islamic International Medical Complex,Islamic International Medical Complex Muhammad Mansha Yaad Rd Islamabad,NIL,NIL,NIL,Internal Medicine- Pulmonolgy- Haematology- Cardiology- Psychiatry- Dentistry- Diabetology- Dermatology- Ophthalmology- Gynaecology - ENT- General Surgery-Neonatology- Gastroenterology
+19,Islamabad Specialist Clinic,Islamabad Specialist Clinic Kiran Plaza Ground Floor Plot 13-A F-8 Markaz F-8 Islamabad,+92 51 2817094,NIL,NIL,Obstetrics- Gynecology
+20,HOPE MEDICAL DENTAL & DIAGNOSTICS,HOPE MEDICAL DENTAL & DIAGNOSTICS 283/6 Main Peshawar Road Rawalpindi cantt,NIL,NIL,NIL,Neurological- Orthopaedic- Paediatric- Rheumatology- Geriatric- Angioplasty- Cardiac Transplant- Metabolic Syndrome- Diabetes- Kidney- Gastrointestinal
+21,Quaid-e-Azam International Hospital,Quaid-e-Azam International Hospital Near Golra Morr Adjacent Froebels School Peshawar Rd Islamabad,+92 51 8449100,http://www.qih.com.pk/,info@qih.com.pk,Dermatology- Psychiatry- Clinical Psychology- Anesthesia- Dentistry- Radiology- Pathology- Plastic Surgery- Nephrology and Neurology

@@ -13,6 +13,7 @@
         <item >Recommend Me</item>
         <item >Emergency</item>
         <item >About</item>
+        <item>Logout</item>
        <!--  <item >Photos</item>
         <item >Communities</item>-->
         
@@ -25,13 +26,35 @@
         <item>@drawable/ic_people</item>
         <item>@drawable/ic_whats_hot</item>
          <item>@drawable/ic_pages</item>
-       <!--  <item>@drawable/ic_photos</item>
-        <item>@drawable/ic_communities</item>-->
+       <item>@drawable/ic_photos</item>
+       <item>@drawable/ic_communities</item>
         
     </array>
     
     <!-- Content Description -->
     <string name="desc_list_item_icon">Item Icon</string>
-<!-- Emergency Numbers -->
-	
+
+	<array name="pics_hospitals">
+        <item>@drawable/img_ali</item>
+        <item>@drawable/ic_home</item>
+        <item>@drawable/img_bilal</item>
+         <item>@drawable/ic_home</item>
+       <item>@drawable/img_maroof</item>
+       <item>@drawable/img_paec</item>
+       <item>@drawable/img_shifa</item>
+       <item>@drawable/img_fauji</item>
+       <item>@drawable/ic_home</item>
+       <item>@drawable/img_pims</item>
+        <item>@drawable/img_fed</item>
+        <item>@drawable/ic_home</item>
+        <item>@drawable/img_nih</item>
+        <item>@drawable/img_nescom</item>
+        <item>@drawable/img_krl</item>
+        <item>@drawable/img_kulsum</item>
+        <item>@drawable/img_ihs</item>
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_home</item>
+        <item>@drawable/img_qih</item>
+    </array>
 </resources>
